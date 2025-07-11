@@ -1,4 +1,4 @@
-?php
+<?php
 $filename = "notes.txt";
 
 // Ajouter une note
@@ -23,7 +23,6 @@ if (isset($_GET['delete'])) {
 // Lire les notes
 $notes = file_exists($filename) ? file($filename, FILE_IGNORE_NEW_LINES) : [];
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -34,12 +33,10 @@ $notes = file_exists($filename) ? file($filename, FILE_IGNORE_NEW_LINES) : [];
 <body>
 <div class="container">
     <h1>📒 Mon Carnet de Notes</h1>
-
     <form method="POST" class="form-note">
         <input type="text" name="note" placeholder="Écris ta note ici..." required>
         <button type="submit">Ajouter la note</button>
     </form>
-
     <?php if (count($notes) > 0): ?>
     <ul class="note-list">
         <?php foreach ($notes as $index => $note): ?>
