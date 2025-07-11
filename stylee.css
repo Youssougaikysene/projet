@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-note {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.form-note input[type="text"] {
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.form-note input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+.form-note button {
+    padding: 14px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.form-note button:hover {
+    background-color: #0056b3;
+}
+
+.note-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.note-list li {
+    background: #e9f0fa;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-list li span {
+    font-size: 16px;
+    color: #333;
+    flex: 1;
+}
+
+.form-delete {
+    margin: 0;
+}
+
+.form-delete button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.form-delete button:hover {
+    background-color: #c82333;
+}
+
+.vide {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 30px;
+}
